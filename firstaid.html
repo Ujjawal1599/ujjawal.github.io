@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-route.js"></script>
+    <script src="Qu.js">
+    </script> 
+    <style >
+.di
+{
+background-image: url('firstaid.jpg');
+}
+#a
+{
+
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: red;
+  padding: 10px;
+
+}
+#b
+{
+ background-color: pink;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body ng-app="myApp" class="di">
+<div id="a">
+    <a href="#!fire" id="b">Fire burn</a>
+    <a href="#!heart" id="b">Heart attack</a>
+    <a href="#!facture" id="b">facture</a>
+</div>
+    <div ng-view></div>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when("/fire", {
+                    templateUrl: "fire.html"
+                })
+                .when("/heart", {
+                    templateUrl: "heart.html"
+                })
+                .when("/facture", {
+                    templateUrl: "fract.html"
+                });
+        });
+    </script>
+</body>
+
+</html>

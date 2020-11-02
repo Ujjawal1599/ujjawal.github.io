@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<head> 
+<meta charset="utf=8">
+<link rel="stylesheet" type="text/css" href="intern.css">
+</head>
+<body>
+<div class="container">
+<div class="heading">
+<h1><font-family:"Copperplate">INTERNSHIP REGISTRATION</font></h1>
+</div>
+<p><h2>PROVIDING THE NEW DOCTORS WITH THE BEST REAL LIFE TRAINING AND ENVIRONMENT TO MAKE THEM THE BEST!</h2></p>
+<p><h3><marquee><font color="red";>REGISTER NOW!</font></marquee><p> 
+<article>
+<table align="center" cellpadding="5px" cellspacing="5px">
+<tr>
+<td>First Name</td>
+<td><input type="text" id="fn"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" id="ln"></td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" id="dates"></td>
+</tr>
+<tr>
+<td>Institution Studied In</td>
+<td><input type="text" id="ins"></td>
+</tr>
+<tr>
+<td>Year of Passing</td>
+<td><select name="class" id="yr">
+<option value="First">First</option>
+<option value="Second">Second</option>
+<option value="third">Third</option>
+<option value="Fourth">Fourth</option>
+</select></td>
+</tr>
+<td>Degree Attained</td>
+<td><input type="radio" name="MBBS" id="degree" value="MBBS">MBBS
+<input type="radio" name="MD" id="degree" value="MD">MD
+<input type="radio" name="PhD" id="degree" value="PhD">PhD
+<input type="radio" name="OBDS" id="degree" value="OBDS">OBDS</td>
+</tr>
+<tr>
+<td>Past Experience In Medical</td>
+<td><textarea id="experi" name="experi" rows="4" cols="50">
+</textarea></td>
+</tr>
+<tr>
+<td><button onclick="showData()">Submit</button></td>
+<td><input type="reset" value="reset"></td>
+</tr>
+</table>
+<p id="hey"></p>
+</article>
+</div>
+<script type="text/javascript">
+function showData()
+{
+var t=document.getElementById('fn').value;
+var f=document.getElementById('ln').value;
+var tn=document.getElementById('ins').value;
+var cl=document.getElementById('yr').value;
+var da=document.getElementById('dates').value;
+var ti=document.getElementById('degree').value;
+var g=document.getElementById('experi').value;
+ var tas = document.getElementById('hey');
+ tas.textContent = "Mr./Mrs. "+t+" "+f+" of institution "+tn+" Studying in year "+cl+" Date of Birth "+da+" pursuing Degree in "+ti+" having experience  "+g ;
+}
+
+</script>
+</body>
+</html>

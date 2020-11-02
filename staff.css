@@ -1,0 +1,21 @@
+body {
+    background-image: url('staff.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #FFDAB9;
+}
+#h
+{
+font-size:20px;
+color:red;
+font-weight:bold;
+}

@@ -1,0 +1,27 @@
+body {
+    background-image: url('exp.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #CD5C5C;
+}
+#hel
+{
+font-size:20px;
+color:red;
+font-weight:bold;
+}
+#h
+{
+font-size:20px;
+color:red;
+font-weight:bold;
+}

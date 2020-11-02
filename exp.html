@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<head> 
+<meta charset="utf=8">
+<link rel="stylesheet" type="text/css" href="exp.css">
+</head>
+<body>
+<div class="container">
+<div class="heading">
+<h1><font-family:"Copperplate">EXISTING PATIENT</font></h1>
+</div>
+<article>
+<table align="center" cellpadding="5px" cellspacing="5px">
+<tr>
+<td id="h">Patient's Name</td>
+<td><input type="text" id="fn"></td>
+</tr>
+<tr>
+<td id="h">Patient's ID</td>
+<td><input type="text" id="ids"></td>
+</tr>
+<tr>
+<td id="h">Password</td>
+<td><input type="password" id="pass"></td>
+</tr>
+<tr>
+<td id="h">Date of Birth</td>
+<td><input type="date" id="dates"></td>
+</tr>
+<tr>
+<td><button onclick="showData()">Login</button></td>
+<td><input type="reset" value="reset"></td>
+</tr>
+</table>
+</article>
+<p id="hel"></p>
+</div>
+<script type="text/javascript">
+function showData()
+{
+var t=document.getElementById('fn').value;
+var f=document.getElementById('ids').value;
+var tn=document.getElementById('pass').value;
+var da=document.getElementById('dates').value;
+ var tas = document.getElementById('hel');
+ tas.textContent = "Welcome Mr./Mrs. "+t;
+}
+</script>
+</body>
+</html>

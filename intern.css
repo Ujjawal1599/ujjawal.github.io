@@ -1,0 +1,22 @@
+body {
+    background-image: url('intern.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #FFDAB9;
+}
+h2{
+    text-align: center;
+    color: #C71585;
+}
+h3{
+    color: #FF4500;
+}

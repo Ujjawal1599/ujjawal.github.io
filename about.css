@@ -1,0 +1,18 @@
+body {
+    background-image: url('about.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #6B8E23;
+}
+h2{
+    color: #A0522D;
+}

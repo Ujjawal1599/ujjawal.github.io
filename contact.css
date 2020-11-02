@@ -1,0 +1,21 @@
+
+body {
+    background-image: url('contact.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: #4B0082;
+}
+td{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}

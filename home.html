@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="home.css">
+ </head>
+ <body>
+ <header>
+ <div class="logo">
+ <img src="hospital.jpeg" height="80px" width="80px">
+ <p><b>HealthMax</b></p>
+ </div>
+ <nav>
+ <ul>
+<li class="abc"><a class="links" href="home.html">HOME</a></li>
+<li class="abc"><a class="links" href="about.html">ABOUT US</a></li>
+<li class="abc"><a class="links" href="contact.html">CONTACT</a></li>
+
+</ul>
+ </nav>
+ </header>
+<div class="slideshow_container">
+<div class="mySlides">
+  <div class="numbertext"><h3>1 / 3</h3></div>
+  <img src="1.jfif" style="width:100%; height:400px">
+</div>
+<div class="mySlides">
+  <div class="numbertext"><h3>2 / 3</h3></div>
+  <img src="2.jpg" style="width:100%; height:400px">
+</div>
+<div class="mySlides">
+  <div class="numbertext"><h3>3 / 3</h3></div>
+  <img src="3.jpg" style="width:100%; height:400px">
+</div>
+
+</div>
+ </div>
+ <div class="grid-container">
+ <div class="vertical-menu">
+ <ul>
+ <li><a href="depart.html"><h3>Departments</h3></a></li>
+ <li><a href="staff.html"><h3>Staff Login</h3></a></li>
+ <li><a href="index.html"><h3>New Patient</h3></a></li>
+ <li><a href="exp.html"><h3>Existing Patient</h3></a></li>
+ <li><a href="intern.html"><h3>Internship</h3></a></li>
+ <li><a href="firstaid.html"><h3>Firstaid help</h3></a></li>
+ </ul>
+ </div>
+ <div class="grid-item">
+ <article>
+ <text align="center"><h2><b><u><i>HealthMax</i></u></b></h2></text><br><br>
+ <p><h2>The family of HealthMax was founded in 1990,Since then it has been our sole purpose 
+ to provide the best health care facility and treatment to each and every person.</h2></p><br><br>
+ <p><h2>Operating with world class equipments and providing the services at low cost so as to
+ make general health facilities to every class of the society.</h2></p><br><br>
+ <p><h2>Recruiting the best medical graduates as the upcoming doctors ensures that the life of 
+ a patient is in safe and skilled hands.Top colleges of India like AIIMS PGI's are the major 
+ institute that provide us with their produced talents in the medical field.</h2></p><br><br>
+ <p><h2>Equiped with a blood bank,a taruma center and an emergency ward with the capacity of working
+ non-stop continuously 24X7 everyday.</h2></p>
+ <p><h2>Fighting The CORONAVIRUS with on all fronts.New Covid-19 centers opend in varous cities
+ like Delhi,Mumbai,Lucknow,Chennai,etc.Ensuring 100% implementation of the safety procedures in all
+ our centers.LET'S FIGHT CORONA TOGETHER!</h2></p>
+ </article>
+ </div>
+ </div>
+<script>
+var slideIndex=0;
+showslides();
+function showslides()
+{
+var i;
+var slides=document.getElementsByClassName("mySlides");
+for(i=0;i<slides.length;i++)
+{
+slides[i].style.display="none";
+}
+slideIndex++;
+if(slideIndex>slides.length)
+{slideIndex=1;}
+slides[slideIndex-1].style.display="block";
+setTimeout(showslides, 3000);
+}
+</script>
+ </body>
+</html>
